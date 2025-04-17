@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3aae24b1-6b4c-43da-8f9f-4c957087e0c5" name="Changes" comment="Project_Structure">
-      <change afterPath="$PROJECT_DIR$/Feature/Login.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Steps/Login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3aae24b1-6b4c-43da-8f9f-4c957087e0c5" name="Changes" comment="Code fixed for Login and Page verifiation">
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +22,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "bonthunagesh"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/bonthunagesh/Jenkins_project",
+    "accountId": "b24ffa19-7e58-4e95-b980-b6bdb0734286"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 4
 }]]></component>
@@ -35,7 +45,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master"
   }
 }]]></component>
@@ -68,7 +80,23 @@
       <option name="project" value="LOCAL" />
       <updated>1744878433114</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Code fixed for Login and Page verifiation">
+      <option name="closed" value="true" />
+      <created>1744880246372</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1744880246372</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Code fixed for Login and Page verifiation">
+      <option name="closed" value="true" />
+      <created>1744880262006</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1744880262006</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -90,6 +118,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project_Structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project_Structure" />
+    <MESSAGE value="Code fixed for Login and Page verifiation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code fixed for Login and Page verifiation" />
   </component>
 </project>
