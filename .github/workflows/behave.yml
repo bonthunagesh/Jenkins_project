@@ -2,9 +2,9 @@ name: Run Behave Tests
 
 on:
   push:
-    branches: [ master ]  # Change if you're using another branch
+    branches: [ CICD_implementation ]  # Change if you're using another branch
   pull_request:
-    branches: [ master ]
+    branches: [ CICD_implementation  ]
 
 jobs:
   behave-tests:
