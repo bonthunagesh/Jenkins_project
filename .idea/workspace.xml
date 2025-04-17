@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3aae24b1-6b4c-43da-8f9f-4c957087e0c5" name="Changes" comment="Code fixed for Login and Page verifiation">
+    <list default="true" id="3aae24b1-6b4c-43da-8f9f-4c957087e0c5" name="Changes" comment="git behave file updated">
       <change beforePath="$PROJECT_DIR$/.github/workflows/behave.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/behave.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744906094195</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="git behave file updated">
+      <option name="closed" value="true" />
+      <created>1744906406885</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1744906406885</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -135,6 +143,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project_Structure" />
     <MESSAGE value="Code fixed for Login and Page verifiation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code fixed for Login and Page verifiation" />
+    <MESSAGE value="git behave file updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="git behave file updated" />
   </component>
 </project>
