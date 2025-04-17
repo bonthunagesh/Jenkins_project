@@ -27,5 +27,12 @@ jobs:
       - name: Run Behave Tests
         run:  behave -f json -o Reports/report.json
 
+      - name: Upload JSON Report
+        uses: actions/upload-artifact@v3
+        with:
+            name: report-json
+            path: Reports/report.json
+
+
 
 
