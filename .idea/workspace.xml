@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3aae24b1-6b4c-43da-8f9f-4c957087e0c5" name="Changes" comment="CICD_Branch Updated in Github file">
+    <list default="true" id="3aae24b1-6b4c-43da-8f9f-4c957087e0c5" name="Changes" comment="runs-on: self-hosted">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/behave.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/behave.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -181,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744908947834</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="runs-on: self-hosted">
+      <option name="closed" value="true" />
+      <created>1745087561805</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1745087561805</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -236,6 +245,7 @@
     <MESSAGE value="Upload Artificat Line no 30 ti 34 Removed" />
     <MESSAGE value="CICD_Branch" />
     <MESSAGE value="CICD_Branch Updated in Github file" />
-    <option name="LAST_COMMIT_MESSAGE" value="CICD_Branch Updated in Github file" />
+    <MESSAGE value="runs-on: self-hosted" />
+    <option name="LAST_COMMIT_MESSAGE" value="runs-on: self-hosted" />
   </component>
 </project>
