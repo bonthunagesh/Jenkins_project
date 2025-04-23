@@ -2,7 +2,7 @@ name: Run Behave Tests
 
 on:
   push:
-    branches: [ master ]
+    branches: [ CICD_implementation ]
   pull_request:
     branches: [ CICD_implementation ]
 
