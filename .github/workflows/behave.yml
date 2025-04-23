@@ -29,7 +29,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          pip install chromedriver-autoinstaller webdriver-manager
+          pip install chromedriver-autoinstaller webdriver-manager behave-html-formatter
 
       - name: Install WebDriver
         shell: bash
@@ -43,4 +43,13 @@ jobs:
       - name: Run Behave Tests
         shell: bash
         run: |
-          behave -f json -o Reports/report_${{ matrix.os }}_${{ matrix.browser }}.json --define browser=${{ matrix.browser }}
+          mkdir -p Reports
+          behave -f json -o Reports/report_${{ matrix.os }}_${{ matrix.browser }}.json -f behave_html_formatter:HTMLFormatter -o Reports/report_${{ matrix.os }}_${{ matrix.browser }}.html --define browser=${{ matrix.browser }}
+
+      - name: Upload Test Reports
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-reports-${{ matrix.os }}-${{ matrix.browser }}
+          path: Reports/
+          retention-days: 7
