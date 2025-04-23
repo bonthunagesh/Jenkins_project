@@ -8,11 +8,13 @@ on:
 
 jobs:
   behave-tests:
-    runs-on: windows-latest
+    runs-on: ${{ matrix.os }}
 
     strategy:
       matrix:
+        os: [windows-latest, macos-latest, ubuntu-latest]
         browser: [chrome, firefox]
+      fail-fast: false
 
     steps:
       - name: Checkout Code
@@ -30,14 +32,15 @@ jobs:
           pip install chromedriver-autoinstaller webdriver-manager
 
       - name: Install WebDriver
+        shell: bash
         run: |
-          if ("${{ matrix.browser }}" -eq "chrome") {
+          if [ "${{ matrix.browser }}" = "chrome" ]; then
             python -c "import chromedriver_autoinstaller; chromedriver_autoinstaller.install()"
-          }
-          if ("${{ matrix.browser }}" -eq "firefox") {
+          elif [ "${{ matrix.browser }}" = "firefox" ]; then
             python -c "from webdriver_manager.firefox import GeckoDriverManager; GeckoDriverManager().install()"
-          }
+          fi
 
       - name: Run Behave Tests
+        shell: bash
         run: |
-          behave -f json -o Reports/report_${{ matrix.browser }}.json --define browser=${{ matrix.browser }}
+          behave -f json -o Reports/report_${{ matrix.os }}_${{ matrix.browser }}.json --define browser=${{ matrix.browser }}
