@@ -17,14 +17,14 @@ jobs:
       - name: Set Up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'  # Use your Python version here
+          python-version: '3.11'
 
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run This for Demo
+      - name: Behave Test
         run:  behave -f json -o Reports/report.json
 
 
