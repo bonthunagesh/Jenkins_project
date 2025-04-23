@@ -24,7 +24,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run Behave Tests
+      - name: Run This for Demo
         run:  behave -f json -o Reports/report.json
 
 
