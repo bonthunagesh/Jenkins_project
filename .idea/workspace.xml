@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3aae24b1-6b4c-43da-8f9f-4c957087e0c5" name="Changes" comment="Multi browser">
+    <list default="true" id="3aae24b1-6b4c-43da-8f9f-4c957087e0c5" name="Changes" comment="Multi OS">
       <change beforePath="$PROJECT_DIR$/.github/workflows/behave.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/behave.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -374,7 +374,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745817349860</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Multi OS">
+      <option name="closed" value="true" />
+      <created>1745817458175</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1745817458175</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -443,6 +451,7 @@
     <MESSAGE value="Multi browsewr Fixed" />
     <MESSAGE value="Multi" />
     <MESSAGE value="Multi browser" />
-    <option name="LAST_COMMIT_MESSAGE" value="Multi browser" />
+    <MESSAGE value="Multi OS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Multi OS" />
   </component>
 </project>
