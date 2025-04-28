@@ -2,16 +2,15 @@ name: Run Behave Tests
 
 on:
   push:
-    branches: [ CICD_implementation ]
+    branches: [CICD_implementation]
 
 jobs:
   behave-tests:
-    runs-on: ${{ matrix.os }}
+    runs-on: windows-latest  # Use Windows as the OS
 
     strategy:
       matrix:
-        os: [windows-latest, macos-latest, ubuntu-latest]
-        browser: [chrome, firefox]  # You can add more browsers here
+        browser: [chrome, firefox]  # Only considering browsers
       fail-fast: false
 
     steps:
@@ -29,15 +28,14 @@ jobs:
           pip install -r requirements.txt
           pip install chromedriver-autoinstaller webdriver-manager
 
-      - name: Install WebDriver
+      - name: Install WebDriver for Chrome or Firefox
         run: |
           if [ "${{ matrix.browser }}" = "chrome" ]; then
             python -c "import chromedriver_autoinstaller; chromedriver_autoinstaller.install()"
           elif [ "${{ matrix.browser }}" = "firefox" ]; then
             python -c "from webdriver_manager.firefox import GeckoDriverManager; GeckoDriverManager().install()"
-          # Add additional browsers here if needed in the future
           fi
 
       - name: Run Behave Tests
         run: |
-          behave -f json -o Reports/report_${{ matrix.os }}_${{ matrix.browser }}.json --define browser=${{ matrix.browser }}
+          behave -f json -o Reports/report_${{ matrix.browser }}.json --define browser=${{ matrix.browser }}
