@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3aae24b1-6b4c-43da-8f9f-4c957087e0c5" name="Changes" comment="Browser">
+    <list default="true" id="3aae24b1-6b4c-43da-8f9f-4c957087e0c5" name="Changes" comment="Multi browsewr Fixed">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/behave.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/behave.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,15 +49,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "CICD__implementation"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;CICD__implementation&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\BonthuNageshRao\PycharmProjects\Jenkins_project\Feature" />
@@ -326,7 +327,23 @@
       <option name="project" value="LOCAL" />
       <updated>1745435095628</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Browser">
+      <option name="closed" value="true" />
+      <created>1745816350460</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1745816350460</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Multi browsewr Fixed">
+      <option name="closed" value="true" />
+      <created>1745816484382</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1745816484382</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -393,6 +410,7 @@
     <MESSAGE value="Multi browser and Multo OS" />
     <MESSAGE value="reports" />
     <MESSAGE value="Browser" />
-    <option name="LAST_COMMIT_MESSAGE" value="Browser" />
+    <MESSAGE value="Multi browsewr Fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Multi browsewr Fixed" />
   </component>
 </project>

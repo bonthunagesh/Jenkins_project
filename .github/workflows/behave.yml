@@ -11,7 +11,7 @@ jobs:
     strategy:
       matrix:
         os: [windows-latest, macos-latest, ubuntu-latest]
-        browser: [chrome, firefox]
+        browser: [chrome, firefox]  # You can add more browsers here
       fail-fast: false
 
     steps:
@@ -35,6 +35,7 @@ jobs:
             python -c "import chromedriver_autoinstaller; chromedriver_autoinstaller.install()"
           elif [ "${{ matrix.browser }}" = "firefox" ]; then
             python -c "from webdriver_manager.firefox import GeckoDriverManager; GeckoDriverManager().install()"
+          # Add additional browsers here if needed in the future
           fi
 
       - name: Run Behave Tests
