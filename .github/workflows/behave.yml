@@ -6,12 +6,13 @@ on:
 
 jobs:
   behave-tests:
-    runs-on: windows-latest  # Run tests on Windows
-
     strategy:
       matrix:
+        os: [windows-latest, ubuntu-latest, macos-latest]
         browser: [chrome, firefox]
       fail-fast: false
+
+    runs-on: ${{ matrix.os }}  # Dynamically select the operating system
 
     steps:
       - name: Checkout Code
@@ -29,15 +30,14 @@ jobs:
           pip install chromedriver-autoinstaller webdriver-manager
 
       - name: Install WebDriver for Chrome or Firefox
-        shell: pwsh
+        shell: bash
         run: |
-          if ($env:browser -eq "chrome") {
+          if [ "${{ matrix.browser }}" = "chrome" ]; then
             python -c "import chromedriver_autoinstaller; chromedriver_autoinstaller.install()"
-          }
-          elseif ($env:browser -eq "firefox") {
+          elif [ "${{ matrix.browser }}" = "firefox" ]; then
             python -c "from webdriver_manager.firefox import GeckoDriverManager; GeckoDriverManager().install()"
-          }
+          fi
 
       - name: Run Behave Tests
         run: |
-          behave -f json -o Reports/report_${{ matrix.browser }}.json --define browser=${{ matrix.browser }}
+          behave -f json -o Reports/report_${{ matrix.browser }}_${{ matrix.os }}.json --define browser=${{ matrix.browser }}
