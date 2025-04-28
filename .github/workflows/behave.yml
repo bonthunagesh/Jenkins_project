@@ -10,7 +10,7 @@ jobs:
 
     strategy:
       matrix:
-        browser: [chrome, firefox]  # Matrix for chrome and firefox to run in parallel
+        browser: [chrome, firefox]
       fail-fast: false
 
     steps:
@@ -29,7 +29,7 @@ jobs:
           pip install chromedriver-autoinstaller webdriver-manager
 
       - name: Install WebDriver for Chrome or Firefox
-        shell: pwsh  # Use PowerShell for Windows runner
+        shell: pwsh
         run: |
           if ($env:browser -eq "chrome") {
             python -c "import chromedriver_autoinstaller; chromedriver_autoinstaller.install()"
