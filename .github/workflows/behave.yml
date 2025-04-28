@@ -2,7 +2,7 @@ name: Run Behave Tests
 
 on:
   push:
-    branches: [CICD_implementation]
+    branches: [CICD_implementation_multi]
 
 jobs:
   behave-tests:
