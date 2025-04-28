@@ -4,7 +4,6 @@ on:
   push:
     branches: [ CICD_implementation ]
 
-
 jobs:
   behave-tests:
     runs-on: ${{ matrix.os }}
@@ -31,14 +30,13 @@ jobs:
           pip install chromedriver-autoinstaller webdriver-manager
 
       - name: Install WebDriver
-        shell: bash
         run: |
           if [ "${{ matrix.browser }}" = "chrome" ]; then
             python -c "import chromedriver_autoinstaller; chromedriver_autoinstaller.install()"
           elif [ "${{ matrix.browser }}" = "firefox" ]; then
             python -c "from webdriver_manager.firefox import GeckoDriverManager; GeckoDriverManager().install()"
+          fi
 
       - name: Run Behave Tests
-        shell: bash
         run: |
           behave -f json -o Reports/report_${{ matrix.os }}_${{ matrix.browser }}.json --define browser=${{ matrix.browser }}
