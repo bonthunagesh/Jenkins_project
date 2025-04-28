@@ -6,11 +6,11 @@ on:
 
 jobs:
   behave-tests:
-    runs-on: windows-latest  # Use Windows as the OS
+    runs-on: windows-latest  # Run tests on Windows
 
     strategy:
       matrix:
-        browser: [chrome, firefox]  # Only considering browsers
+        browser: [chrome, firefox]  # Matrix for chrome and firefox to run in parallel
       fail-fast: false
 
     steps:
@@ -29,12 +29,14 @@ jobs:
           pip install chromedriver-autoinstaller webdriver-manager
 
       - name: Install WebDriver for Chrome or Firefox
+        shell: pwsh  # Use PowerShell for Windows runner
         run: |
-          if [ "${{ matrix.browser }}" = "chrome" ]; then
+          if ($env:browser -eq "chrome") {
             python -c "import chromedriver_autoinstaller; chromedriver_autoinstaller.install()"
-          elif [ "${{ matrix.browser }}" = "firefox" ]; then
+          }
+          elseif ($env:browser -eq "firefox") {
             python -c "from webdriver_manager.firefox import GeckoDriverManager; GeckoDriverManager().install()"
-          fi
+          }
 
       - name: Run Behave Tests
         run: |
